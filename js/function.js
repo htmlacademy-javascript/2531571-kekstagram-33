@@ -23,11 +23,11 @@ const palindrom = (string) => {
   let reverseCharset = ''; //это переменная для хранения символов, считываемых ниже.тут вопрос про инициализацию переменной
   for (let i = charset.length - 1;i >= 0;i--) {
     reverseCharset += charset[i];
-    if (charset === reverseCharset) {
-      return true;
-    } else {
-      return false;
-    }
+  }
+  if (charset === reverseCharset) {
+    return true;
+  } else {
+    return false;
   }
 };
 
