@@ -20,7 +20,7 @@ checkLength('проверяемая строка',20);
 
 const palindrom = (string) => {
   const charset = string.toUpperCase().replaceAll(' ',''); //тут мы приводим к стандарту вводимую строку
-  let reverseCharset; //это переменная для хранения символов, считываемых ниже.тут вопрос про инициализацию переменной
+  let reverseCharset = ''; //это переменная для хранения символов, считываемых ниже.тут вопрос про инициализацию переменной
   for (let i = charset.at(-1);i > 0;i--) {
     reverseCharset += i;
     if (charset === reverseCharset) {
