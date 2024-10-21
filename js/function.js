@@ -8,7 +8,7 @@
 */
 
 const checkLength = (text,number) => {
-  if(length(text) <= number) {
+  if(text.length <= number) {
     return true;
   }else {
     return false;
